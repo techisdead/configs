@@ -13,7 +13,7 @@ Ubuntu 20.04
 * Edit .bashrc
    - alias ll='ls -alFG'
    - add shortcut aliases for ssh etc (stored offline)
-* install tweaks for gnome `apt install gnome-tweak-tool`
+* install tweaks for gnome `apt install gnome-tweaks`
 
 ## Basic utilities
 
