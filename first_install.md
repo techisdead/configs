@@ -5,6 +5,7 @@ Ubuntu 20.04
 ## Basics
 
 * `sudo apt-get install build-essential` for build tools
+* `sudo apt-get install net-tools` for ip tools
 * Open file manager and 
    - add permissions to columns in 'list columns' (under preferences)
    - check 'show hidden files'
