@@ -50,14 +50,14 @@ lapply(c("data.table", "ggplot2", "remotes", "glue"
 
 #package dev basics
 lapply(
-  c( "usethis","devtools", "testthat", "here")
+  c( "usethis","devtools", "tinytest")
   , install_me, ignore_installed = FALSE, source = "CRAN")
 
 
 
 ## Install connections
 lapply(
-  c( "DBI", "RMariaDB", "readxl", "mongolite", "RAthena" )
+  c( "DBI", "RPostgres", "readxl")
   , install_me, ignore_installed = FALSE, source = "CRAN")
 
 
@@ -75,25 +75,20 @@ lapply(
 
 # data eng
 lapply(
-  c("arrow", "aws.signature","aws.s3", "base64enc"
+  c("arrow", "paws", "base64enc"
     ,"covr", "httr")
   , install_me, ignore_installed = FALSE, source = "CRAN")
 
 # modelling and data science
 lapply(
   install.packages(c("binom", "lme4", "glmmTMB","DHARMa", "Distance","survival","MASS",
-                     "mgcv","keras"))
+                     "mgcv"))
   ,install_me, ignore_installed = FALSE, source = "CRAN")
 
 # pretties
 lapply(
   install.packages(c("corrplot","DT", "patchwork","RColorBrewer", "viridis",
                      "viridisLite"))
-  ,install_me, ignore_installed = FALSE, source = "CRAN")
-
-# project stuff
-lapply(
-  c("audio")
   ,install_me, ignore_installed = FALSE, source = "CRAN")
 
 # fun
@@ -107,11 +102,6 @@ lapply(
   ,install_me, ignore_installed = FALSE, source = "CRAN")
 
 
-# our stuff - opensource not on CRAN
-lapply(
-  c("SymbolixAU/clubhouser")
-  ,install_me, ignore_installed = FALSE, source = "github")
-
 # Our stff - cran
 lapply(
   c("colourvalues", "geojsonsf","googleway", "googlePolylines"
@@ -121,7 +111,8 @@ lapply(
 # our stuff - private
 lapply( c("SymbolixAU/symbolix.utils"
           ,"SymbolixAU/SymbolixTemplates"
-          , "SymbolixAU/blacrm"
+          , "SymbolixAU/symdb"
+          , "SymbolixAU/symaws"
           , "SymbolixAU/datatests")
         ,install_me, ignore_installed = FALSE, source = "github")
 
