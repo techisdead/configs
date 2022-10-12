@@ -46,6 +46,10 @@ echo "Pin: release o=CRAN-Apt Project" >> /etc/apt/preferences.d/99cranapt
 echo "Pin: release l=CRAN-Apt Packages" >> /etc/apt/preferences.d/99cranapt
 echo "Pin-Priority: 700"  >> /etc/apt/preferences.d/99cranapt
 
+Rscript -e 'install.packages("bspm")'
+export RHOME=$(R RHOME)
+echo "suppressMessages(bspm::enable())" >> ${RHOME}/etc/Rprofile.site
+
 
 ## Rstudio
 wget $(RSTUDIO_URL)/$(RSTUDIO_PKG)
