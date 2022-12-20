@@ -3,8 +3,8 @@
 ## sudo su
 
 # update from https://www.rstudio.com/products/rstudio/download/#download
-RSTUDIO_URL=https://download1.rstudio.org/desktop/jammy/amd64
-RSTUDIO_PKG=rstudio-2022.07.2-576-amd64.deb
+RSTUDIO_URL=https://download1.rstudio.org/electron/jammy/amd64
+RSTUDIO_PKG=rstudio-2022.12.0-353-amd64.deb
 
 source /etc/lsb-release
 
@@ -52,9 +52,9 @@ echo "suppressMessages(bspm::enable())" >> ${RHOME}/etc/Rprofile.site
 
 
 ## Rstudio
-wget $(RSTUDIO_URL)/$(RSTUDIO_PKG)
-sudo apt install -f -y ./$(RSTUDIO_PKG)
-rm ./$(RSTUDIO_PKG)
+wget $RSTUDIO_URL/$RSTUDIO_PKG
+sudo apt install -f -y ./$RSTUDIO_PKG
+rm ./$RSTUDIO_PKG
 
 
 
