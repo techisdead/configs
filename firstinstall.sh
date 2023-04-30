@@ -4,7 +4,7 @@
 
 # update from https://www.rstudio.com/products/rstudio/download/#download
 RSTUDIO_URL=https://download1.rstudio.org/electron/jammy/amd64
-RSTUDIO_PKG=rstudio-2022.12.0-353-amd64.deb
+RSTUDIO_PKG=rstudio-2023.03.0-386-amd64.deb
 
 source /etc/lsb-release
 
