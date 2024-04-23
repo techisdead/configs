@@ -45,7 +45,7 @@ install_me <- function(pck, ignore_installed = FALSE, source = "CRAN"){
 ## The basics
 lapply(c("data.table", "ggplot2", "remotes", "glue"
          , "units", "vctrs", "Rcpp", "magrittr", "reticulate",
-         "RPostgres", "scales"),
+          "scales"),
        install_me, ignore_installed = FALSE, source = "CRAN")
 
 #package dev basics
@@ -62,7 +62,7 @@ lapply(
 
 
 # writing and editing
-lapply( c("knitr","rmarkdown", "bookdown", "blogdown", "distill"
+lapply( c("knitr","rmarkdown", "bookdown", "blogdown"
           ,"english", "kableExtra","xaringan", "xaringanthemer")
         , install_me, ignore_installed = FALSE, source = "CRAN")
 
@@ -84,7 +84,7 @@ lapply(
   install.packages(c("binom", "lme4", "glmmTMB","DHARMa", "Distance","survival","MASS",
                      "mgcv"))
   ,install_me, ignore_installed = FALSE, source = "CRAN")
-
+x
 # pretties
 lapply(
   install.packages(c("corrplot","DT", "patchwork","RColorBrewer", "viridis",
@@ -113,6 +113,7 @@ lapply( c("SymbolixAU/symbolix.utils"
           ,"SymbolixAU/SymbolixTemplates"
           , "SymbolixAU/symdb"
           , "SymbolixAU/symaws"
-          , "SymbolixAU/datatests")
+          , "SymbolixAU/datatests"
+          ,"SymbolixAU/collision")
         ,install_me, ignore_installed = FALSE, source = "github")
 
